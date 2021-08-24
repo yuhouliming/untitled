@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyVue1</title>
+</head>
+<body>
+<!-- view -->
+<div id="app">
+        <a v-if="flag">正确</a>
+        <a v-else>错误</a>
+
+    <a v-if="message===1">一个</a>
+    <a v-else-if="message===2">两个</a>
+    <a v-else>三个</a>
+
+</div>
+<!-- 导入vuejs -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+<script>
+
+    // new Vue({
+    //     el:'#app',
+    //     data: {
+    //         message:'Hello World!'
+    //     }
+    // });
+
+    var myvue= new Vue({
+        el: "#app",
+        data: {
+            flag: false,
+            message: 10
+        }
+    });
+</script>
+</body>
+</html>

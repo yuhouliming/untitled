@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyVue1</title>
+</head>
+<body>
+<!-- view -->
+<div id="app">
+    <span v-bind:title="message">
+        对于生产，我们建议链接到特定版本号并构建以避免较新版本意外损坏：
+    </span>
+
+</div>
+<!-- 导入vuejs -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+<script>
+
+    // new Vue({
+    //     el:'#app',
+    //     data: {
+    //         message:'Hello World!'
+    //     }
+    // });
+
+    var myvue= new Vue({
+        el: "#app",
+        data:{
+            message:"hellovue"
+        }
+    });
+</script>
+</body>
+</html>
